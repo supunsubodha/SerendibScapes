@@ -3,6 +3,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:5px;
+    margin:2px;
     background-color: rgb(174, 184, 119);
     color:white;
 }
@@ -16,5 +17,7 @@ nav a{
     padding:5px;
     font-weight: bold;
     font-size: large;
-    
+}
+.slider{
+    padding:5px;
 }
