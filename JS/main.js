@@ -1,6 +1,6 @@
 images = [];
 i=0;
-time=2000;
+time=4000;
 
 images[0] = "images/slides/1.jpg";
 images[1] = "images/slides/2.jpg";
@@ -15,6 +15,24 @@ function changeImage(){
     } else {
         i=0;
     }
-    setTimeout(changeImage, time);
+    setTimeout("changeImage()",time);
 }
 window.onload = changeImage;
+function previousImage(){
+    if(i == 0){
+        i = images.length -1;
+        document.getElementsByName("slide")[0].src = images[i];
+    }else{
+        i--;
+        document.getElementsByName("slide")[0].src = images[i];
+    }
+}
+function nextImage(){
+    if(i == images.length -1){
+        i=0;
+        document.getElementsByName("slide")[0].src = images[i];
+    }else{
+        i++;
+        document.getElementsByName("slide")[0].src = images[i];
+    }
+}

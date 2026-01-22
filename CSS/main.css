@@ -20,4 +20,43 @@ nav a{
 }
 .slider{
     padding:5px;
+    position: relative;
+}
+.slider h1{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:10px;
+    border-radius: 5px;
+}
+.bookNow{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+.buttonLeft{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.buttonRight{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
