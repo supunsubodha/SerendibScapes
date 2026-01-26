@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services | Serendib Scapes</title>
+        <link rel="icon" href="../favicon.png">
+        <link rel="stylesheet" href="../CSS/aboutus.css">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <script>
+            //This will be load separately writen header.html to this index.html
+            fetch("../html/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+            //This will be load separately writen footer.html to this index.html
+            fetch("../html/footer.html")
+                .then(res => res.text())
+                .then(data => {
+                document.getElementById("footer").innerHTML = data;
+                });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div><!-- Header will be added by js -->
+        <div class="aboutus-container">
+            <img src="../images/aboutbanner.png" alt="About Us Banner" >
+            <h2>Services</h2>
+            <!--Book your tour button-->
+            <button id="bookticket" onclick="location.href='booknow.html'"><span class="material-symbols-outlined">
+            airplane_ticket
+            </span>Book your tour now</button>
+
+            <p>
+                Whether you’re visiting Sri Lanka for the first time or returning to explore deeper, Serendib Scapes helps
+                you travel with confidence and comfort. We design experiences that match your pace—relaxed, adventurous,
+                family-friendly, or romantic—while keeping things local, respectful, and easy to manage.
+                <br><br>
+                <strong>What we can arrange for you</strong>
+                <ul>
+                    <li><strong>Custom itineraries</strong> (3–14 days): coast, hill country, heritage triangle, wildlife, or a mix</li>
+                    <li><strong>Transport with trusted drivers</strong>: airport pickup, day trips, multi-day routes</li>
+                    <li><strong>Accommodation planning</strong>: boutique hotels, eco-lodges, beachfront stays, budget-friendly options</li>
+                    <li><strong>Guided experiences</strong>: city walks, temple/heritage tours, tea estate visits, cooking experiences</li>
+                    <li><strong>Nature & adventure</strong>: hikes, waterfalls, camping, scenic train routes, whale watching (seasonal)</li>
+                    <li><strong>Ethical wildlife safaris</strong>: recommended parks, best times, and responsible viewing guidance</li>
+                </ul>
+                <br>
+                <strong>Why travelers choose us</strong>
+                <ul>
+                    <li><strong>Local-first</strong> planning with real on-the-ground knowledge</li>
+                    <li><strong>Flexible</strong> schedules—swap destinations, slow down, or add experiences anytime</li>
+                    <li><strong>Transparent</strong> recommendations—clear options that fit your budget</li>
+                    <li><strong>Comfort + authenticity</strong>—the best mix of must-see highlights and hidden gems</li>
+                </ul>
+                <br>
+                Tell us your dates, group size, and interests, and we’ll suggest a route that feels like it was made just
+                for you.
+            </p>
+            
+        </div>
+        <div id="footer"></div><!-- Footer will be added by js -->
+    </body>
+</html>

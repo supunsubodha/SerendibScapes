@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us | Serendib Scapes</title>
+        <link rel="icon" href="../favicon.png">
+        <link rel="stylesheet" href="../CSS/aboutus.css">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <script>
+            //This will be load separately writen header.html to this index.html
+            fetch("../html/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+            //This will be load separately writen footer.html to this index.html
+            fetch("../html/footer.html")
+                .then(res => res.text())
+                .then(data => {
+                document.getElementById("footer").innerHTML = data;
+                });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div><!-- Header will be added by js -->
+        <div class="aboutus-container">
+            <img src="../images/aboutbanner.png" alt="About Us Banner" >
+            <h2>About Us</h2>
+            <!--Book your tour button-->
+            <button id="bookticket" onclick="location.href='booknow.html'"><span class="material-symbols-outlined">
+            airplane_ticket
+            </span>Book your tour now</button>
+
+            <p>
+                At Serendib Scapes, we don’t just plan trips—we craft stories you can step into. Sri Lanka is an island of
+                many moods: cool mountain mornings in tea country, warm ocean sunsets along the southern coast, rain-washed
+                forests that smell like earth and cinnamon, and ancient cities where history still feels alive. Our goal is
+                to help you experience all of it in a way that feels authentic, comfortable, and unhurried.
+                <br><br>
+                We believe the best journeys are built around people, not packages. That’s why we start by understanding
+                what you really want—your pace, your budget, your interests, and even the small details like food
+                preferences and the kind of places you enjoy staying. From there, we shape an itinerary that balances
+                iconic highlights with quiet, local moments: a scenic train ride through the hills, a hidden viewpoint at
+                sunrise, a village meal prepared with love, or a coastal evening spent listening to waves instead of noise.
+                <br><br>
+                Our local-first approach means we work closely with Sri Lankan guides, drivers, and community hosts, so
+                your travel supports the people who call these places home. We also aim for nature-friendly choices
+                whenever possible—responsible wildlife viewing, mindful routes that reduce crowding, and experiences that
+                respect the environment and culture. Whether you’re hiking to waterfalls, exploring temples and heritage
+                sites, tasting street food in a bustling market, or spotting elephants at golden hour, we want every moment
+                to feel meaningful and personal.
+                <br><br>
+                If you’re ready to discover the island beyond the obvious, Serendib Scapes is here to guide you—thoughtful
+                planning, warm local knowledge, and unforgettable scenery, all woven into one journey that truly feels like
+                yours.
+            </p>
+        </div>
+        <div id="footer"></div><!-- Footer will be added by js -->
+    </body>
+</html>
